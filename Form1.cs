@@ -5,9 +5,7 @@ namespace Assignment_4._1._1
         Dictionary<string, Person> addressBook = CreateDataSource.CreateSampleDictionary();
         public Form1()
         {
-            InitializeComponent();
-
-            
+            InitializeComponent();                        
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -16,13 +14,11 @@ namespace Assignment_4._1._1
             if (addressBook.ContainsKey(queryName))
             {
                 lblSearchResult.Text = "Record Found";
-                dataGridView1.DataSource = new BindingSource(addressBook[queryName], null);
-                
+                dataGridView1.DataSource = new BindingSource(addressBook[queryName], null);                
             }
             else
             {
-                lblSearchResult.Text = "Record Not Found";
-                
+                lblSearchResult.Text = "Record Not Found";                
             }
         }
 
