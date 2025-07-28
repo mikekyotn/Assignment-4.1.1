@@ -44,6 +44,20 @@
             label3 = new Label();
             lblSearchResult = new Label();
             btnShowAll = new Button();
+            btnAddRecord = new Button();
+            btnDeleteRecord = new Button();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            txtBoxUpdateFName = new TextBox();
+            txtBoxUpdateLName = new TextBox();
+            txtBoxUpdateAddress = new TextBox();
+            txtBoxUpdateMobile = new TextBox();
+            txtBoxUpdateWork = new TextBox();
+            lblUpdateMessage = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)personBindingSource).BeginInit();
             SuspendLayout();
@@ -149,11 +163,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(14, 216);
+            label3.Location = new Point(80, 214);
             label3.Name = "label3";
-            label3.Size = new Size(53, 20);
+            label3.Size = new Size(119, 20);
             label3.TabIndex = 6;
-            label3.Text = "Search";
+            label3.Text = "Search or Delete";
             // 
             // lblSearchResult
             // 
@@ -167,7 +181,7 @@
             // 
             // btnShowAll
             // 
-            btnShowAll.Location = new Point(656, 206);
+            btnShowAll.Location = new Point(378, 240);
             btnShowAll.Name = "btnShowAll";
             btnShowAll.Size = new Size(116, 59);
             btnShowAll.TabIndex = 9;
@@ -175,11 +189,146 @@
             btnShowAll.UseVisualStyleBackColor = true;
             btnShowAll.Click += btnShowAll_Click;
             // 
+            // btnAddRecord
+            // 
+            btnAddRecord.Location = new Point(395, 415);
+            btnAddRecord.Name = "btnAddRecord";
+            btnAddRecord.Size = new Size(110, 30);
+            btnAddRecord.TabIndex = 10;
+            btnAddRecord.Text = "Add Record";
+            btnAddRecord.UseVisualStyleBackColor = true;
+            btnAddRecord.Click += btnAddRecord_Click;
+            // 
+            // btnDeleteRecord
+            // 
+            btnDeleteRecord.BackColor = Color.Red;
+            btnDeleteRecord.ForeColor = SystemColors.HighlightText;
+            btnDeleteRecord.Location = new Point(138, 351);
+            btnDeleteRecord.Name = "btnDeleteRecord";
+            btnDeleteRecord.Size = new Size(110, 30);
+            btnDeleteRecord.TabIndex = 11;
+            btnDeleteRecord.Text = "Delete Record";
+            btnDeleteRecord.UseVisualStyleBackColor = false;
+            btnDeleteRecord.Click += btnDeleteRecord_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(589, 216);
+            label4.Name = "label4";
+            label4.Size = new Size(88, 20);
+            label4.TabIndex = 12;
+            label4.Text = "Add Record";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(511, 244);
+            label5.Name = "label5";
+            label5.Size = new Size(80, 20);
+            label5.TabIndex = 13;
+            label5.Text = "First Name";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(511, 277);
+            label6.Name = "label6";
+            label6.Size = new Size(79, 20);
+            label6.TabIndex = 14;
+            label6.Text = "Last Name";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(511, 311);
+            label7.Name = "label7";
+            label7.Size = new Size(62, 20);
+            label7.TabIndex = 15;
+            label7.Text = "Address";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(511, 351);
+            label8.Name = "label8";
+            label8.Size = new Size(65, 20);
+            label8.TabIndex = 16;
+            label8.Text = "Mobile#";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(511, 384);
+            label9.Name = "label9";
+            label9.Size = new Size(52, 20);
+            label9.TabIndex = 17;
+            label9.Text = "Work#";
+            // 
+            // txtBoxUpdateFName
+            // 
+            txtBoxUpdateFName.Location = new Point(616, 244);
+            txtBoxUpdateFName.Name = "txtBoxUpdateFName";
+            txtBoxUpdateFName.Size = new Size(125, 27);
+            txtBoxUpdateFName.TabIndex = 18;
+            // 
+            // txtBoxUpdateLName
+            // 
+            txtBoxUpdateLName.Location = new Point(616, 277);
+            txtBoxUpdateLName.Name = "txtBoxUpdateLName";
+            txtBoxUpdateLName.Size = new Size(125, 27);
+            txtBoxUpdateLName.TabIndex = 19;
+            // 
+            // txtBoxUpdateAddress
+            // 
+            txtBoxUpdateAddress.Location = new Point(616, 311);
+            txtBoxUpdateAddress.Name = "txtBoxUpdateAddress";
+            txtBoxUpdateAddress.Size = new Size(125, 27);
+            txtBoxUpdateAddress.TabIndex = 20;
+            // 
+            // txtBoxUpdateMobile
+            // 
+            txtBoxUpdateMobile.Location = new Point(616, 344);
+            txtBoxUpdateMobile.Name = "txtBoxUpdateMobile";
+            txtBoxUpdateMobile.Size = new Size(125, 27);
+            txtBoxUpdateMobile.TabIndex = 21;
+            // 
+            // txtBoxUpdateWork
+            // 
+            txtBoxUpdateWork.Location = new Point(616, 381);
+            txtBoxUpdateWork.Name = "txtBoxUpdateWork";
+            txtBoxUpdateWork.Size = new Size(125, 27);
+            txtBoxUpdateWork.TabIndex = 22;
+            // 
+            // lblUpdateMessage
+            // 
+            lblUpdateMessage.AutoSize = true;
+            lblUpdateMessage.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblUpdateMessage.Location = new Point(511, 411);
+            lblUpdateMessage.Name = "lblUpdateMessage";
+            lblUpdateMessage.Size = new Size(187, 31);
+            lblUpdateMessage.TabIndex = 23;
+            lblUpdateMessage.Text = "Update Message";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblUpdateMessage);
+            Controls.Add(txtBoxUpdateWork);
+            Controls.Add(txtBoxUpdateMobile);
+            Controls.Add(txtBoxUpdateAddress);
+            Controls.Add(txtBoxUpdateLName);
+            Controls.Add(txtBoxUpdateFName);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(btnDeleteRecord);
+            Controls.Add(btnAddRecord);
             Controls.Add(btnShowAll);
             Controls.Add(lblSearchResult);
             Controls.Add(label3);
@@ -214,5 +363,19 @@
         private Label label3;
         private Label lblSearchResult;
         private Button btnShowAll;
+        private Button btnAddRecord;
+        private Button btnDeleteRecord;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private TextBox txtBoxUpdateFName;
+        private TextBox txtBoxUpdateLName;
+        private TextBox txtBoxUpdateAddress;
+        private TextBox txtBoxUpdateMobile;
+        private TextBox txtBoxUpdateWork;
+        private Label lblUpdateMessage;
     }
 }
